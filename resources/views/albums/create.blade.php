@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <h3>Create Album</h3>
-    <br>
+    <h3 style="margin-bottom: 20px">Create Album</h3>
+    @include('inc.messages')
     {!! Form::open(['action' => 'AlbumsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         {{ Form::text('name', '', ['placeholder' => 'Album Name']) }}
         {{ Form::textarea('description', '', ['placeholder' => 'Album Description']) }}
