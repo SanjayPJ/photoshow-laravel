@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
     @include('inc.messages')
-    <h3 style="margin-bottom: 20px">Album</h3>
+    <h3>Album</h3>
+    <hr style="margin-top: 0">
     @if (count($albums) > 0)
-        <?php $col_count = count($albums); $i = 1; ?>
         <div id="album">
             <div class="grid-x grid-margin-x">
                 @foreach ($albums as $album)
